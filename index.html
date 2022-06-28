@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,13 +49,17 @@
                                         <a href="https://www.tyzen.io">home <i class="font-size-12"></i></a>
                                     </li>
                                     <li>
+                                        <a href="#">earn <i class="fa fa-angle-down font-size-12"></i></a>
+                                        <ul class="drop-menu">
+                                            <li><a href="https://faucet.tyzen.io">faucet</a></li>
+                                            <li><a href="https://pool.rplant.xyz/" target="_blank">mining pool</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
                                         <a href="#downloads">Downloads <i class="font-size-12"></i></a>
                                     </li>
                                     <li>
                                         <a href="http://explorer.tyzen.io/" target="_blank">explorer <i class="font-size-12"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://miningpoolstats.stream/tyzen" target="_blank">mining pools <i class="font-size-12"></i></a>
                                     </li>
                                     <li>
                                         <a href="https://node.tyzen.io/" target="_blank">nodes <i class="font-size-12"></i></a>
@@ -163,20 +168,38 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
-                    <h2 class="counter-number text-white mb-2">5+</h2>
+                    <h2 class="counter-number text-white mb-2">
+                        <?php 
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/getconnectioncount");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    $output = curl_exec($ch); 
+    curl_close($ch);      
+    echo $output;
+?>+
+                    </h2>
                     <p class="counter-title text-white">Total Full Nodes</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
-                    <h2 class="counter-number text-white mb-2">1+</h2>
+                    <h2 class="counter-number text-white mb-2">1</h2>
                     <p class="counter-title text-white">Mining Pools</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
-                    <h2 class="counter-number text-white mb-2">25+</h2>
-                    <p class="counter-title text-white">Users</p>
+                    <h2 class="counter-number text-white mb-2">
+                        <?php 
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/getblockcount");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    $output = curl_exec($ch); 
+    curl_close($ch);      
+    echo $output;
+?>
+                    +</h2>
+                    <p class="counter-title text-white">Blocks</p>
                 </div>
             </div>
         </div>
