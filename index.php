@@ -1,3 +1,19 @@
+<?php
+
+// basic API call function for TZN to minimalize code.
+// usage: tyzenAPI("getblockcount");
+// available methods: getdifficulty | getconnectioncount | getblockcount | getnetworkhashps | getblockhash?index=XX (Block ID) | getblock?hash=XX (hash)
+
+function tyzenAPI($method) {
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/" . $method);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    $output = curl_exec($ch); 
+    curl_close($ch);      
+    echo $output;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -195,14 +211,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
                     <h2 class="counter-number text-white mb-2">
-                        <?php 
-    $ch = curl_init(); 
-    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/getconnectioncount");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-    $output = curl_exec($ch); 
-    curl_close($ch);      
-    echo $output;
-?>+
+                        <?php tyzenAPI("getconnectioncount"); ?>+
                     </h2>
                     <p class="counter-title text-white">Total Full Nodes</p>
                 </div>
@@ -216,15 +225,8 @@
             <div class="col-lg-4 col-md-6">
                 <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
                     <h2 class="counter-number text-white mb-2">
-                        <?php 
-    $ch = curl_init(); 
-    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/getblockcount");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-    $output = curl_exec($ch); 
-    curl_close($ch);      
-    echo $output;
-?>
-                    +</h2>
+                        <?php tyzenAPI("getblockcount"); ?>+
+                    </h2>
                     <p class="counter-title text-white">Blocks</p>
                 </div>
             </div>
