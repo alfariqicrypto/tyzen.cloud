@@ -1,3 +1,19 @@
+<?php
+
+// basic API call function for TZN to minimalize code.
+// usage: tyzenAPI("getblockcount");
+// available methods: getdifficulty | getconnectioncount | getblockcount | getnetworkhashps | getblockhash?index=XX (Block ID) | getblock?hash=XX (hash)
+
+function tyzenAPI($method) {
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/" . $method);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    $output = curl_exec($ch); 
+    curl_close($ch);      
+    echo $output;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,8 +147,8 @@
             <h1 class="sec-title font-size-60 mb-3 text-white">Fast, Secure and Cheap Transactions</h1>
             <p><img src="/images/tyzen-logo-new.png" alt="Fast, Secure and Cheap Transactions" style="width:150px;height:150px;"></p>
             <br>
-            <p class="sec-desc text-white">Tyzen is a secure CPU Proof of Work currency based on the YescryptR16 algorithm</p>
-            <p>Tyzen (TZN) appeared in June 2022. After countless hours of development and testing we were ready to unleash a new digital currency to the world, Tyzen. TZN is aimed towards the future of cryptocurrency with strong emphasis on transactions speeds and low fees, providing you with stable, fast and cheap transactions.</p>
+            <p class="sec-desc text-white lead">Tyzen is a secure CPU Proof of Work currency based on the YescryptR16 algorithm</p>
+            <p class="lead my-2">Tyzen (TZN) appeared in June 2022. After countless hours of development and testing we were ready to unleash a new digital currency to the world, Tyzen. TZN is aimed towards the future of cryptocurrency with strong emphasis on transactions speeds and low fees, providing you with stable, fast and cheap transactions.</p>
             
         </div>
     </div>
@@ -189,20 +205,13 @@
     </div>
 </section>
 
-<section class="funfact-area bg-dark">
+<section class="funfact-area bg-dark p-4">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
                     <h2 class="counter-number text-white mb-2">
-                        <?php 
-    $ch = curl_init(); 
-    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/getconnectioncount");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-    $output = curl_exec($ch); 
-    curl_close($ch);      
-    echo $output;
-?>+
+                        <?php tyzenAPI("getconnectioncount"); ?>+
                     </h2>
                     <p class="counter-title text-white">Total Full Nodes</p>
                 </div>
@@ -216,15 +225,8 @@
             <div class="col-lg-4 col-md-6">
                 <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
                     <h2 class="counter-number text-white mb-2">
-                        <?php 
-    $ch = curl_init(); 
-    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/getblockcount");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-    $output = curl_exec($ch); 
-    curl_close($ch);      
-    echo $output;
-?>
-                    +</h2>
+                        <?php tyzenAPI("getblockcount"); ?>+
+                    </h2>
                     <p class="counter-title text-white">Blocks</p>
                 </div>
             </div>
