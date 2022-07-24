@@ -1,3 +1,19 @@
+<?php
+
+// basic API call function for TZN to minimalize code.
+// usage: tyzenAPI("getblockcount");
+// available methods: getdifficulty | getconnectioncount | getblockcount | getnetworkhashps | getblockhash?index=XX (Block ID) | getblock?hash=XX (hash)
+
+function tyzenAPI($method) {
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, "https://explorer.tyzen.io/api/" . $method);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    $output = curl_exec($ch); 
+    curl_close($ch);      
+    echo $output;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +22,10 @@
   <meta name="author" content="Tyzen Core Developers" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Tyzen.io</title>
+  <title>Secure Blockchain Cryptocurrency Assets</title>
   <link rel="icon" href="images/favicon.ico" />
 
-  <meta name="title" content="Tyzen.io">
+  <meta name="title" content="Secure Blockchain Cryptocurrency Assets">
   <meta name="description"
     content="Tyzen is a secure CPU Proof of Work currency based on the YescryptR16 algorithm">
   <meta name="keywords"
@@ -19,7 +35,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.tyzen.io/">
-  <meta property="og:title" content="Tyzen.io">
+  <meta property="og:title" content="Secure Blockchain Cryptocurrency Assets">
   <meta property="og:description"
     content="Tyzen is a secure CPU Proof of Work currency based on the YescryptR16 algorithm">
   <meta property="og:image" content="images/tyzen-logo-new.png">
@@ -27,7 +43,7 @@
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://www.tyzen.io/">
-  <meta property="twitter:title" content="Tyzen.io">
+  <meta property="twitter:title" content="Secure Blockchain Cryptocurrency Assets">
   <meta property="twitter:description" content="Tyzen is a secure CPU Proof of Work currency based on the YescryptR16 algorithm">
   <meta property="twitter:image" content="images/tyzen-logo-new.png">
 
