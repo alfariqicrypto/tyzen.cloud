@@ -96,18 +96,19 @@ function tyzenAPI($method) {
                     <li>
                       <a href="#">Exchanges <i class="fa fa-angle-down font-size-12"></i></a>
                       <ul class="drop-menu">
-                        <li><a href="https://www.trademoro.com">Trade Moro</a></li>
+                        <li><a href="https://www.trademoro.com">TradeMoro</a></li>
+                        <li><a href="https://www.infiex.net">Infiex</a></li>
                       </ul>
                     </li>
                     <li>
                       <a href="#">TYZEN (BEP20) <i class="fa fa-angle-down font-size-12"></i></a>
                       <ul class="drop-menu">
-                        <li><a href="https://docs.tyzen.live/tyzen-bep20/tyzen-bep-20">Tokenomics</a></li>
+                        <li><a href="https://docs.tyzen.live/tyzen-bep20/tyzen-bep-20" target="_blank">Tokenomics</a></li>
+                        <li><a href="https://farm.tyzen.io/#/" target="_blank">Farm & Staking</a></li>
                         <li><a
-                            href="https://bscscan.com/address/0x524dc4b2db22761bf4df9cecf5f25890865c086d">Pre-Sale</a>
+                            href="https://bscscan.com/address/0x524dc4b2db22761bf4df9cecf5f25890865c086d" target="_blank">Pre-Sale</a>
                         </li>
-                        <li><a href="https://bscscan.com/token/0x524DC4b2dB22761Bf4dF9cEcF5f25890865C086d"
-                            target="_blank">bscscan.com</a></li>
+                        <li><a href="https://bscscan.com/token/0x524DC4b2dB22761Bf4dF9cEcF5f25890865C086d" target="_blank">bscscan.com</a></li>
                       </ul>
                     </li>
                     <li>
@@ -121,7 +122,11 @@ function tyzenAPI($method) {
                       <a href="#downloads">Downloads <i class="font-size-12"></i></a>
                     </li>
                     <li>
-                      <a href="https://explorer.tyzen.io/" target="_blank">explorer <i class="font-size-12"></i></a>
+                      <a href="#">Explorer <i class="fa fa-angle-down font-size-12"></i></a>
+                      <ul class="drop-menu">
+                        <li><a href="https://www.tyzen.live" target="_blank">Tyzen.live</a></li>
+                        <li><a href="https://explorer.tyzen.io" target="_blank">Backup</a></li>
+                      </ul>
                     </li>
                   </ul>
                 </nav>
