@@ -96,8 +96,7 @@ function tyzenAPI($method) {
                     <li>
                       <a href="#">Exchanges <i class="fa fa-angle-down font-size-12"></i></a>
                       <ul class="drop-menu">
-                        <li><a href="https://www.trademoro.com">TradeMoro</a></li>
-                        <li><a href="https://www.infiex.net">Infiex</a></li>
+                        <li><a href="https://www.exbitron.com/signup?refid=ID272B264A36" target="_blank">EXBITRON</a></li>
                       </ul>
                     </li>
                     <li>
@@ -391,9 +390,6 @@ function tyzenAPI($method) {
               <img src="https://bscscan.com/images/brandassets/BscScan-logo-circle.png" alt="bscscan.com">
             </div><!-- end client-logo-item -->
             <div class="client-logo-item d-inline-block">
-              <img src="https://i.ibb.co/ct2B8Vd/Artboard-2.png" alt="trademoro">
-            </div><!-- end client-logo-item -->
-            <div class="client-logo-item d-inline-block">
               <img src="https://seeklogo.com/images/O/open-sea-logo-0FFCF87312-seeklogo.com.png" alt="opensea">
             </div><!-- end client-logo-item -->
             <div class="client-logo-item d-inline-block">
@@ -419,7 +415,7 @@ function tyzenAPI($method) {
             <ul class="list-items pt-4">
               <li class="mb-3"><a href="mailto:supports@tyzen.io"><i class="fa fa-envelope font-size-14"></i>
                   supports@tyzen.io</a></li>
-              <li class="mb-3"><i class="fa fa-globe font-size-14"></i> Bali, Indonesia</li>
+              <li class="mb-3"><i class="fa fa-globe font-size-14"></i> Indonesia</li>
             </ul>
             <div class="social-icons">
               <a href="https://twitter.com/TyzenIo" target="_blank" class="icon-element icon-element-sm mr-1"><i
