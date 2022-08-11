@@ -90,13 +90,10 @@ function tyzenAPI($method) {
                       <a href="#blockomics">Blockomics <i class="font-size-12"></i></a>
                     </li>
                     <li>
-                      <a href="https://opensea.io/collection/tyzen-coin" target="_blank">NFT <i
-                          class="font-size-12"></i></a>
-                    </li>
-                    <li>
                       <a href="#">Exchanges <i class="fa fa-angle-down font-size-12"></i></a>
                       <ul class="drop-menu">
                         <li><a href="https://www.exbitron.com/signup?refid=ID272B264A36" target="_blank">EXBITRON</a></li>
+                        <li><a href="https://exchange-assets.com/en/?market=tzn_usdt" target="_blank">EXCHANGE-ASSETS</a></li>
                       </ul>
                     </li>
                     <li>
@@ -168,7 +165,6 @@ function tyzenAPI($method) {
           ready to unleash a new digital currency to the world, Tyzen. TZN is aimed towards the future of cryptocurrency
           with strong emphasis on transactions speeds and low fees, providing you with stable, fast and cheap
           transactions.</p>
-
       </div>
     </div>
     <svg class="hero-svg hero--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
@@ -216,12 +212,11 @@ function tyzenAPI($method) {
           <div class="card hover-y">
             <div class="card-body position-relative">
               <div class="icon-element text-color fancy-radius">
-                <i class="fa fa-github"></i>
+                <i class="fa fa-mobile"></i>
               </div>
-              <h4 class="card-title mt-4">Source code</h4>
-              <p class="card-desc mb-3">Github stagging tree of Tyzen Blockchain, for complining from source code are
-                avaible for public</p>
-              <a href="https://github.com/tyzen-tzn/tyzen" target="_blank" class="btn-link">Check Github <i
+              <h4 class="card-title mt-4">Mobile Wallet</h4>
+              <p class="card-desc mb-3">Simple Tyzen Wallet for mobile, currently only for android</p>
+              <a href="https://tyzenwallet/downloads/tyzen-wallet-1.0.apk" target="_blank" class="btn-link">Android <i
                   class="fa fa-external-link"></i></a>
             </div>
           </div>
@@ -242,10 +237,7 @@ function tyzenAPI($method) {
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
-            <h2 class="counter-number text-white mb-2">8</h2>
-            <p class="counter-title text-white">Mining Pools</p>
-          </div>
+          <center><script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-1" lcw-coin="TZN" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#ff6900" lcw-color-bg="#1f2434" lcw-border-w="0" ></div></center>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="counter-item bg-slim-white py-5 mb-4 mb-lg-0">
@@ -390,9 +382,6 @@ function tyzenAPI($method) {
               <img src="https://bscscan.com/images/brandassets/BscScan-logo-circle.png" alt="bscscan.com">
             </div><!-- end client-logo-item -->
             <div class="client-logo-item d-inline-block">
-              <img src="https://seeklogo.com/images/O/open-sea-logo-0FFCF87312-seeklogo.com.png" alt="opensea">
-            </div><!-- end client-logo-item -->
-            <div class="client-logo-item d-inline-block">
               <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/7186.png" alt="pancakeswap">
             </div>
             <div class="client-logo-item d-inline-block">
@@ -413,10 +402,9 @@ function tyzenAPI($method) {
               <img src="images/tyzen-footer.png" style=" width:130;height:37;" alt="Tyzen logo">
             </a>
             <ul class="list-items pt-4">
-              <li class="mb-3"><a href="mailto:supports@tyzen.io"><i class="fa fa-envelope font-size-14"></i>
-                  supports@tyzen.io</a></li>
-              <li class="mb-3"><i class="fa fa-globe font-size-14"></i> Indonesia</li>
+                <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-6" lcw-coin="TZN" lcw-base="USD" lcw-period="d" lcw-color-tx="#000000" lcw-color-bg="#ffffff" lcw-border-w="0" ></div>
             </ul>
+            <br>
             <div class="social-icons">
               <a href="https://twitter.com/TyzenIo" target="_blank" class="icon-element icon-element-sm mr-1"><i
                   class="fa fa-twitter"></i></a>
@@ -451,7 +439,6 @@ function tyzenAPI($method) {
             <div class="title-shape border-bottom-0"><span></span></div>
             <ul class="list-items list-items-hover pt-4">
               <li class="mb-2"><a href="mailto:supports@tyzen.io">supports@tyzen.io</a></li>
-              <li class="mb-2"><a href="mailto:saka@tyzen.io">saka@tyzen.io</a></li>
               <li class="mb-2"><a target="_blank" href="https://t.me/swtyzen" target="_blank">Telegram Supports</a></li>
               <li class="mb-2"><a target="_blank" href="https://discord.gg/tyzen">Discord Support</a></li>
             </ul>
