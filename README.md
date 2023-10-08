@@ -1,7 +1,7 @@
 # TYZEN | TZN
-![Tyzen Core](http://assets.tyzen.io/image/Tyzen-core.png)
+![Figure 1-1](images/tyzen-black.png)
 
-[www.tyzen.io](https://www.tyzen.io)
+# [www.tyzen.cloud](https://www.tyzen.cloud)
 
 #CURL
 ```
@@ -15,7 +15,7 @@
 ?>
 ```
 
-### Website for Tyzen.io
+### Website for Tyzen.cloud
 - HTML
 - CSS
 - Java Scripts
